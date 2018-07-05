@@ -6,15 +6,36 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" type: "text/css" href="style.css">
-  <title>My React App</title>
+  <title>My Survey</title>
 </head>
 
 <body>
   <div>
         <h1 id="title">Crazy Survey Form</h1>
         <form>
-            <p id="description">It is the survey that you have go through! :D</p>
+            <p id="description">This is the coolest survey that you have go through! :D</p>
             
+            <div class="firstPart">
+              <div></div>
+              <div class=labelChunk>
+                  <label for="name">Name:</label>
+              </div>
+              <div class=inputChunk>
+                  <input type="text" name="name" id="name">
+              </div>
+              <div class=labelChunk>
+                <label for="email">Email:</label>
+              </div>
+              <div class=inputChunk>
+                <input type="text" name="email" id="email">
+              </div>
+              <div class=labelChunk>
+                <label for="age">Age:</label>
+              </div>
+              <div class=inputChunk>
+                <input type="text" name="age" id="age">
+              </div>
+            </div>
         </form>
   </div>
 </body>

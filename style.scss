@@ -4,4 +4,23 @@
 #title, #description{
     margin: auto;
     text-align: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.firstPart{
+    text-align: center;
+    display: inline-block;
+}
+
+.labelChunk{
+    float: left;
+    width: 45%;
+    text-align: right;
+}
+
+.inputChunk{
+    float: right;
+    width: 45%;
+    text-align: left;
 }

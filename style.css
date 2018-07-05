@@ -5,5 +5,28 @@
 #title, #description {
   margin: auto;
   text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.firstPart {
+  text-align: center;
+  display: inline-block;
+}
+
+.labelChunk {
+  float: left;
+  width: 45%;
+  text-align: right;
+}
+
+.inputChunk {
+  float: right;
+  width: 45%;
+  text-align: left;
 }
 /*# sourceMappingURL=style.css.map */
