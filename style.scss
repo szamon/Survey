@@ -9,18 +9,20 @@
 }
 
 .firstPart{
+    margin: auto;
     text-align: center;
-    display: inline-block;
 }
 
 .labelChunk{
+    display: inline-block;
     float: left;
-    width: 45%;
+    width: 49%;
     text-align: right;
 }
 
 .inputChunk{
+    display: inline-block;
     float: right;
-    width: 45%;
+    width: 49%;
     text-align: left;
 }
