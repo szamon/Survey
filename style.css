@@ -13,8 +13,9 @@
       flex-wrap: wrap;
 }
 
-.credPart {
-  margin: auto;
+.credPart, .selPart {
+  margin: 1px auto 0px auto;
+  overflow: hidden;
   text-align: center;
 }
 
