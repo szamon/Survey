@@ -8,8 +8,8 @@
     flex-wrap: wrap;
 }
 
-.credPart, .selPart{
-    margin: 1px auto 0px auto;
+.credPart, .selPart, .checkPart{
+    margin: auto;
     overflow: hidden;
     text-align: center;
 }
@@ -26,4 +26,12 @@
     float: right;
     width: 49%;
     text-align: left;
+}
+
+.inputChBox{
+    float: right;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 49%;
 }
