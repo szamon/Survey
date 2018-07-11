@@ -13,10 +13,9 @@
   <div>
         <h1 id="title">Crazy Survey Form</h1>
         <form>
-            <p id="description">This is the coolest survey that you have go through! :D</p>
+            <p id="description">This is the coolest survey that you have to go through! :D</p>
             
-            <div class="firstPart">
-              <div></div>
+            <div class="credPart">
               <div class=labelChunk>
                   <label for="name">Name:</label>
               </div>
@@ -34,6 +33,21 @@
               </div>
               <div class=inputChunk>
                 <input type="text" name="age" id="age">
+              </div>
+            </div>
+            <div class="selPart">
+              <div class="labelChunk">
+                <label for="dropdownMenu">Choose your current role:</label>
+              </div>
+              <div class="inputChunk">
+                <select name="dropdownMenu">
+                  <option disabled value>Select option from the list</option>
+                  <option value=1>Full Time Job</option>
+                  <option value=2>Student</option>
+                  <option value=3>It`s a secret!</option>
+                  <option value=4>Other</option>
+                  <option value=5>The Emperor of The World</option>
+                </select>
               </div>
             </div>
         </form>
