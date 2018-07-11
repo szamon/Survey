@@ -16,22 +16,22 @@
             <p id="description">This is the coolest survey that you have to go through! :D</p>
             
             <div class="credPart">
-              <div class=labelChunk>
+              <div class="labelChunk">
                   <label for="name">Name:</label>
               </div>
-              <div class=inputChunk>
+              <div class="inputChunk">
                   <input type="text" name="name" id="name">
               </div>
-              <div class=labelChunk>
+              <div class="labelChunk">
                 <label for="email">Email:</label>
               </div>
-              <div class=inputChunk>
+              <div class="inputChunk">
                 <input type="text" name="email" id="email">
               </div>
-              <div class=labelChunk>
+              <div class="labelChunk">
                 <label for="age">Age:</label>
               </div>
-              <div class=inputChunk>
+              <div class="inputChunk">
                 <input type="text" name="age" id="age">
               </div>
             </div>
@@ -47,6 +47,7 @@
                   <option value=3>It`s a secret!</option>
                   <option value=4>Other</option>
                   <option value=5>The Emperor of The World</option>
+                  <option value=6>Other</option>
                 </select>
               </div>
             </div>
@@ -54,10 +55,24 @@
               <div class="labelChunk">
                 <label for="checkbox">What would you do?</label>
               </div>
-              <div class=inputChBox>
-                  <label><input type="checkbox">Eat a hamburger!</label>
-                  <label><input type="checkbox">Conquer the World!</label>
-                  <label><input type="checkbox">Go out!</label>
+              <div class=inputRadioBox>
+                  <label><input type="radio">Eat a hamburger!</label>
+                  <label><input type="radio">Conquer the World!</label>
+                  <label><input type="radio">Go out!</label>
+              </div>
+            </div>
+            <div class="sel2Part">
+              <div class=labelChunk>
+                <label for="dropdownMenu1">Would you recommend it to:</label>
+              </div>
+              <div class=inputChunk>
+                <select name="dropdownMenu1">
+                  <option disabled value>Choose one below</option>
+                  <option value=1>Stranger</option>
+                  <option vaule=2>Dog</option>
+                  <option value=3>Ex-girlfriend</option>
+                  <option value=4>Other</option>
+                </select>
               </div>
             </div>
         </form>
