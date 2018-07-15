@@ -5,77 +5,100 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Gaegu:300,400,700" rel="stylesheet">
   <link rel="stylesheet" type: "text/css" href="style.css">
   <title>My Survey</title>
 </head>
 
 <body>
-  <div>
-        <h1 id="title">Crazy Survey Form</h1>
-        <form>
-            <p id="description">This is the coolest survey that you have to go through! :D</p>
-            
-            <div class="credPart">
-              <div class="labelChunk">
-                  <label for="name">Name:</label>
-              </div>
-              <div class="inputChunk">
-                  <input type="text" name="name" id="name">
-              </div>
-              <div class="labelChunk">
-                <label for="email">Email:</label>
-              </div>
-              <div class="inputChunk">
-                <input type="text" name="email" id="email">
-              </div>
-              <div class="labelChunk">
-                <label for="age">Age:</label>
-              </div>
-              <div class="inputChunk">
-                <input type="text" name="age" id="age">
-              </div>
-            </div>
-            <div class="selPart">
-              <div class="labelChunk">
-                <label for="dropdownMenu">Choose your current role:</label>
-              </div>
-              <div class="inputChunk">
-                <select name="dropdownMenu" class="dropdown">
-                  <option disabled value>Select option from the list</option>
-                  <option value=1>Full Time Job</option>
-                  <option value=2>Student</option>
-                  <option value=3>It`s a secret!</option>
-                  <option value=4>Other</option>
-                  <option value=5>The Emperor of The World</option>
-                  <option value=6>Other</option>
-                </select>
-              </div>
-            </div>
-            <div class="checkPart">
-              <div class="labelChunk">
-                <label for="checkbox">What would you do?</label>
-              </div>
-              <div class=inputRadioBox>
-                  <label><input type="radio">Eat a hamburger!</label>
-                  <label><input type="radio">Conquer the World!</label>
-                  <label><input type="radio">Go out!</label>
-              </div>
-            </div>
-            <div class="sel2Part">
-              <div class=labelChunk>
-                <label for="dropdownMenu1">Would you recommend it to:</label>
-              </div>
-              <div class=inputChunk>
-                <select name="dropdownMenu1">
-                  <option disabled value>Choose one below</option>
-                  <option value=1>Stranger</option>
-                  <option vaule=2>Dog</option>
-                  <option value=3>Ex-girlfriend</option>
-                  <option value=4>Other</option>
-                </select>
-              </div>
-            </div>
-        </form>
+  <h1 id="title">Crazy Survey Form</h1>
+  <p id="description">This is the coolest survey that you have to go through! :D</p>
+  <div class="mainDiv">
+    
+    <form id="survey-form" method="" action="">
+      <div class="credPart">
+        <div class="labelChunk">
+            <label for="name">Name:</label>
+        </div>
+        <div class="inputChunk">
+            <input type="text" name="name" id="name" placeholder="Your Name" required>
+        </div>
+        <div class="labelChunk">
+          <label for="email">Email:</label>
+        </div>
+        <div class="inputChunk">
+          <input type="email" name="email" id="email" placeholder="Your Email" required>
+        </div>
+        <div class="labelChunk">
+          <label for="age">Age:</label>
+        </div>
+        <div class="inputChunk">
+          <input type="text" name="age" id="age" placeholder="Your Age" required>
+        </div>
+      </div>
+      <div class="selPart">
+        <div class="labelChunk">
+          <label for="dropdownMenu">Choose your current role:</label>
+        </div>
+        <div class="inputChunk">
+          <select name="dropdownMenu" id="dropdownMenu">
+            <option disabled value>Select option from the list</option>
+            <option value=1>Full Time Job</option>
+            <option value=2>Student</option>
+            <option value=3>It`s a secret!</option>
+            <option value=4>Other</option>
+            <option value=5>The Emperor of The World</option>
+            <option value=6>Other</option>
+          </select>
+        </div>
+      </div>
+      <div class="radPart">
+        <div class="labelChunk">
+          <label for="checkbox">What would you do?</label>
+        </div>
+        <div name="checkbox" class="inputRadioBox" id="checkbox">
+            <label><input type="radio" name="action">Eat a hamburger!</label>
+            <label><input type="radio" name="action">Conquer the World!</label>
+            <label><input type="radio" name="action">Go out!</label>
+        </div>
+      </div>
+      <div class="sel2Part">
+        <div class="labelChunk">
+          <label for="dropdownMenu1">Would you recommend it to:</label>
+        </div>
+        <div class="inputChunk">
+          <select name="dropdownMenu1"id="dropdownMenu1">
+            <option disabled value>Choose one below</option>
+            <option value=1>Stranger</option>
+            <option vaule=2>Dog</option>
+            <option value=3>Ex-girlfriend</option>
+            <option value=4>Other</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="checkPart">
+        <div class="labelChunk">
+          <label for="checkBoxList">Things to change:</label>
+        </div>
+        <div name="checkBoxList" id="checkBoxList" class="inputCheckBox">
+            <label><input type="checkbox">Your brain</label>
+            <label><input type="checkbox">Mufasa</label>
+            <label><input type="checkbox">Your attitude</label>
+            <label><input type="checkbox">Your girlfriend</label>
+            <label><input type="checkbox">Your face</label>
+        </div>
+      </div>
+      <div class="textPart">
+        <div class="labelChunk">
+          <label for="textArea">Would you like to share some intriguing story?</label>
+        </div>
+        <div class="inputChunk">
+            <textarea name="textarea" id="textArea" placeholder="Share your story here!"></textarea>
+        </div>
+      </div>
+      <input type="submit" value="Submit!">
+    </form>
   </div>
 </body>
 

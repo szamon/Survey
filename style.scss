@@ -1,6 +1,16 @@
-*{
-    border: 1px solid blue;
+// *{
+//     border: 1px solid blue;
+// }
+
+body{
+    font-family: "Gaegu", cursive;
+    font-size: 1.3em;
 }
+
+input, textarea, select{
+    font-family: "Gaegu", cursive;
+}
+
 #title, #description{
     margin: auto;
     text-align: center;
@@ -8,10 +18,33 @@
     flex-wrap: wrap;
 }
 
-.credPart, .selPart, .checkPart{
-    margin: auto;
+#description{
+    margin-top: 15px;
+}
+
+.mainDiv{
+    margin-top: 25px;
+    background: rgb(220, 223, 229);
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+form{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: white;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.credPart, .selPart, .sel2Part, .radPart, .checkPart, .textPart{
+    margin: 20px auto;
     overflow: hidden;
     text-align: center;
+}
+
+.credPart{
+    margin-top: 25px;
 }
 
 .labelChunk{
@@ -28,10 +61,23 @@
     text-align: left;
 }
 
-.inputRadioBox{
+.inputRadioBox, .inputCheckBox{
     float: right;
     display: flex;
     flex-direction: column;
     text-align: left;
     width: 49%;
+    overflow: hidden;
+}
+
+#textArea{
+    height: 50px;
+    width: 300px;
+    font-family: "Gaegu", cursive;
+}
+
+[type="submit"]{
+    display: block;
+    margin: auto;
+    margin-bottom: 25px;
 }
