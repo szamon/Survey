@@ -33,7 +33,7 @@
           <label for="age">Age:</label>
         </div>
         <div class="inputChunk">
-          <input type="text" name="age" id="age" placeholder="Your Age" required>
+          <input type="number" size="3" min="1" max="130" name="age" id="number" placeholder="Your Age" required>
         </div>
       </div>
       <div class="selPart">
@@ -81,17 +81,19 @@
         <div class="labelChunk">
           <label for="checkBoxList">Things to change:</label>
         </div>
-        <div name="checkBoxList" id="checkBoxList" class="inputCheckBox">
-            <label><input type="checkbox">Your brain</label>
-            <label><input type="checkbox">Mufasa</label>
-            <label><input type="checkbox">Your attitude</label>
-            <label><input type="checkbox">Your girlfriend</label>
-            <label><input type="checkbox">Your face</label>
+        <div class="inputChunk">
+          <div name="checkBoxList" id="checkBoxList" class="inputCheckBox">
+              <label><input type="checkbox">Your brain</label>
+              <label><input type="checkbox">Mufasa</label>
+              <label><input type="checkbox">Your attitude</label>
+              <label><input type="checkbox">Your girlfriend</label>
+              <label><input type="checkbox">Your face</label>
+          </div>
         </div>
       </div>
       <div class="textPart">
         <div class="labelChunk">
-          <label for="textArea">Would you like to share some intriguing story?</label>
+          <label for="textArea">Would you like to share your story?</label>
         </div>
         <div class="inputChunk">
             <textarea name="textarea" id="textArea" placeholder="Share your story here!"></textarea>

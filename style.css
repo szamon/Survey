@@ -47,6 +47,10 @@ form {
   margin-top: 25px;
 }
 
+.credPart input {
+  width: 165px;
+}
+
 .labelChunk {
   display: inline-block;
   float: left;
@@ -62,7 +66,6 @@ form {
 }
 
 .inputRadioBox, .inputCheckBox {
-  float: right;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -75,9 +78,13 @@ form {
   overflow: hidden;
 }
 
+.textPart label {
+  padding-left: 50%;
+}
+
 #textArea {
   height: 50px;
-  width: 300px;
+  width: 250px;
   font-family: "Gaegu", cursive;
 }
 
@@ -85,5 +92,40 @@ form {
   display: block;
   margin: auto;
   margin-bottom: 25px;
+}
+
+@media screen and (max-width: 830px) {
+  .credPart input {
+    width: 100px;
+  }
+  .textPart label {
+    padding-left: 60%;
+  }
+  .textPart #textArea {
+    width: 150px;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .inputChunk, .labelChunk {
+    float: left;
+    width: 100%;
+    text-align: center;
+  }
+  .inputCheckBox, .inputRadioBox {
+    width: 30%;
+    margin: auto;
+  }
+  .labelChunk {
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+  .textPart .labelChunk {
+    overflow: visible;
+  }
+  .textPart label {
+    padding: 0 15%;
+  }
 }
 /*# sourceMappingURL=style.css.map */

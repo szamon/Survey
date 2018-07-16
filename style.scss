@@ -1,5 +1,5 @@
 // *{
-//     border: 1px solid blue;
+//     border: 0.5px solid blue;
 // }
 
 body{
@@ -45,6 +45,9 @@ form{
 
 .credPart{
     margin-top: 25px;
+    input{
+        width: 165px;
+    }
 }
 
 .labelChunk{
@@ -62,7 +65,6 @@ form{
 }
 
 .inputRadioBox, .inputCheckBox{
-    float: right;
     display: flex;
     flex-direction: column;
     text-align: left;
@@ -70,9 +72,14 @@ form{
     overflow: hidden;
 }
 
+.textPart{
+    label{
+        padding-left: 50%;
+    }
+}
 #textArea{
     height: 50px;
-    width: 300px;
+    width: 250px;
     font-family: "Gaegu", cursive;
 }
 
@@ -80,4 +87,49 @@ form{
     display: block;
     margin: auto;
     margin-bottom: 25px;
+}
+
+@media screen and(max-width: 830px){
+    .credPart{
+        input{
+            width: 100px;
+        }
+    }
+    
+    .textPart{
+        label{
+            padding-left: 60%;
+        }
+        #textArea{
+            width: 150px;
+        }
+    }
+}
+
+@media screen and(max-width: 660px){
+    .inputChunk, .labelChunk{
+        float: left;
+        width: 100%;
+        text-align: center;
+    }
+
+    .inputCheckBox, .inputRadioBox{
+        width: 30%;
+        margin: auto;
+    }
+
+    .labelChunk{
+        font-weight: 600;
+        margin-top: 10px;
+        margin-bottom: 5px;
+
+    }
+    .textPart{
+        .labelChunk{
+            overflow: visible;
+        }
+        label{
+            padding: 0 15%;
+        }  
+    }
 }
