@@ -67,8 +67,9 @@ form{
 .inputRadioBox, .inputCheckBox{
     display: flex;
     flex-direction: column;
+    width: 100%;
+    float: right;
     text-align: left;
-    width: 49%;
     overflow: hidden;
 }
 
@@ -123,7 +124,8 @@ form{
     }
 
     .inputCheckBox, .inputRadioBox{
-        width: 53%;
+        width: 50%;
+        float: none;
         margin: auto;
     }
 

@@ -73,8 +73,9 @@ form {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  width: 100%;
+  float: right;
   text-align: left;
-  width: 49%;
   overflow: hidden;
 }
 
@@ -119,7 +120,8 @@ form {
     text-align: center;
   }
   .inputCheckBox, .inputRadioBox {
-    width: 53%;
+    width: 50%;
+    float: none;
     margin: auto;
   }
   .labelChunk {
