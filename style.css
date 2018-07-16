@@ -119,13 +119,16 @@ form {
     text-align: center;
   }
   .inputCheckBox, .inputRadioBox {
-    width: 52%;
+    width: 53%;
     margin: auto;
   }
   .labelChunk {
     font-weight: 600;
     margin-top: 10px;
     margin-bottom: 5px;
+  }
+  .textPart {
+    width: 70%;
   }
   .textPart .labelChunk {
     display: block;
