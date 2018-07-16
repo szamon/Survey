@@ -107,13 +107,19 @@ form {
 }
 
 @media screen and (max-width: 660px) {
+  .mainDiv {
+    border-radius: 45%;
+  }
+  form {
+    border-radius: 42%;
+  }
   .inputChunk, .labelChunk {
     float: left;
     width: 100%;
     text-align: center;
   }
   .inputCheckBox, .inputRadioBox {
-    width: 30%;
+    width: 50%;
     margin: auto;
   }
   .labelChunk {
@@ -122,7 +128,7 @@ form {
     margin-bottom: 5px;
   }
   .textPart .labelChunk {
-    overflow: visible;
+    display: block;
   }
   .textPart label {
     padding: 0 15%;
