@@ -120,7 +120,7 @@ form {
     text-align: center;
   }
   .inputCheckBox, .inputRadioBox {
-    width: 58%;
+    width: 60%;
     float: none;
     margin: auto;
   }
